@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Цветочный Everbloom</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+  <link rel="icon" type="image/x-icon" href="images/icon-sunflower.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li> <a href="index.html"> <img id="nav_icon" src="images/icon-sunflower.png"/> </a> </li>
+        <li> <a href="index.html"> Главная </a> </li>
+        <li class="button_catalog"> <a id="button_menu" class="close" onclick="openCatalog()"> Каталог </a>
+          <ul class="catalog">
+            <li> <a> Цветы </a> </li>
+            <li> <a> Букеты </a> </li>
+            <li> <a> Подарки </a> </li>
+            <li> <a> Конструктор </a> </li>
+          </ul>
+        </li>
+        <li> <a href="about.html"> О нас </a> </li>
+        <li> <a> Доставка </a> </li>
+        <li> <a href="contact.html"> Контакты </a> </li>
+        <li> <a href="personal-account.html"> Личный кабинет </a> </li>
+        <li> <img onclick="changeThemeDark()" id="theme_icon_dark" src="images/icon-theme-d.png"> </li>
+        <li> <img onclick="changeThemeLight()" id="theme_icon_light" src="images/icon-theme-l.png"> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="Bouquet_photos">
+    <a href="bouquet-1.html"> <img class="Bouquet_week_photo" src="images/bouquet_1.jpg"/> </a>
+    <div class="Information">
+      <h2> Тёмный роман </h2>
+      <p> Элегантный букет «Тёмный роман» в приглушённых оттенках. Нежные пудровые розы, яркие бордово-оранжевые лилии и светлые тюльппны создают утончённую композицию, дополненную тёмной декоративной листвой. Идеальный выбор для тех, кто ценит стиль, глубину и изысканность. </p>
+      <button id="buy_button"> В корзину </button>
+    </div>
+  </div>
+
+  <footer>
+    <p> © Everbloom 2025 </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
