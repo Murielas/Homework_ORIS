@@ -1,0 +1,29 @@
+body {
+    background-color: #FBFCFD;
+    font-size: 18px;
+    font-family: Georgia;
+}
+
+a {
+    display: block;
+    padding: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.Information {
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 120px;
+}
+
+
