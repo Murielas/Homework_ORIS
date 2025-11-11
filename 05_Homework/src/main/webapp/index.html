@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Цветочный Everbloom</title>
+    <link rel="stylesheet" href="/src/main/webapp/css/styles.css">
+    <link rel="stylesheet" href="/src/main/webapp/css/index.css">
+    <link rel="stylesheet" href="/src/main/webapp/css/menu.css">
+
+    <link rel="icon" type="image/x-icon" href="/src/main/webapp/images/icon-sunflower.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li> <a href="/index"> <img id="nav_icon" src="/src/main/webapp/images/icon-sunflower.png"/> </a> </li>
+                <li> <a href="/index"> Главная </a> </li>
+
+                <li class="button_catalog"> <a id="button_menu" class="close" onclick="openCatalog()"> Каталог </a>
+                    <ul class="catalog">
+                        <li> <a> Цветы </a> </li>
+                        <li> <a href="/catalog-bouquets"> Букеты </a> </li>
+                        <li> <a> Подарки </a> </li>
+                        <li> <a> Конструктор </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="about.html"> О нас </a> </li>
+                <li> <a> Доставка </a> </li>
+                <li> <a href="contact.html"> Контакты </a> </li>
+                <li> <a href="/account"> Личный кабинет </a> </li>
+                <li> <a href="/cart"> Корзина </a> </li>
+                <li> <img onclick="changeThemeDark()" id="theme_icon_dark" src="/src/main/webapp/images/icon-theme-d.png"> </li>
+                <li> <img onclick="changeThemeLight()" id="theme_icon_light" src="/src/main/webapp/images/icon-theme-l.png"> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="Banner">
+        <img class="Banner_photo" src="/src/main/webapp/images/flower-shop.jpeg"/>
+        <div class="Banner_text">
+            <p> Подарите тепло золотой осени с нашей новой коллекцией букетов! </p>
+            <i> Главные цветы этого сезона: георгины, хризантемы и целозии</i>
+            <br>
+            <br>
+            <p> До конца осенней коллекции: </p>
+            <p> <span id="countdown"></span> </p>
+        </div>
+    </div>
+
+    <div class="Bouquet_week">
+        <h1> Букеты недели </h1>
+        <i> Выберите свой и нажмите </i>
+    </div>
+
+    <div class="Slider">
+        <div class="Slides">
+            <div class="Slide_photo"> <a href="/bouquet-1"> <img src="/src/main/webapp/images/bouquet_1.jpg"> </a> </div>
+            <div class="Slide_photo"> <a href="/bouquet-2"> <img src="/src/main/webapp/images/bouquet_2.jpg"> </a> </div>
+            <div class="Slide_photo"> <a href="/bouquet-3"> <img src="/src/main/webapp/images/bouquet_3.jpg"> </a> </div>
+            <div class="Slide_photo"> <img src="/src/main/webapp/images/bouquet_4.jpg"> </div>
+            <div class="Slide_photo"> <img src="/src/main/webapp/images/bouquet_5.jpg"> </div>
+        </div>
+
+        <button class="prev" onclick="showPrev()"> &#10094 </button>
+        <button class="next" onclick="showNext()"> &#10095 </button>
+    </div>
+
+    <div class="Advices">
+        <h1> Советы по уходу за цветами </h1>
+        <div id="advices-container">
+            <p id="advice"> &#9999; Сразу после покупки снимите упаковку, удалите лишние листья, которые могут соприкасаться с водой, и подрежьте стебли под углом 45 градусов острым ножом или секатором. </p>
+        </div>
+        <button onclick="nextAdvice()" class="button_advice"> Ещё совет </button>
+    </div>
+
+    <footer>
+        <p> © Everbloom 2025 </p>
+    </footer>
+
+    <script src="/src/main/webapp/js/script.js"></script>
+    <script src="/src/main/webapp/js/slider.js"></script>
+    <script src="/src/main/webapp/js/countdown.js"></script>
+    <script src="/src/main/webapp/js/dynamic_loadin.js"></script>
+</body>
+</html>
