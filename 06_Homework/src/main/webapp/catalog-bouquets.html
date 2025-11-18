@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Цветочный Everbloom</title>
+    <link rel="stylesheet" href="/src/main/webapp/css/styles.css">
+    <link rel="stylesheet" href="/src/main/webapp/css/catalog.css">
+    <link rel="stylesheet" href="/src/main/webapp/css/menu.css">
+
+    <link rel="icon" type="image/x-icon" href="/src/main/webapp/images/icon-sunflower.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li> <a href="/index"> <img id="nav_icon" src="/src/main/webapp/images/icon-sunflower.png"/> </a> </li>
+                <li> <a href="/index"> Главная </a> </li>
+
+                <li class="button_catalog"> <a id="button_menu" class="close" onclick="openCatalog()"> Каталог </a>
+                    <ul class="catalog">
+                        <li> <a> Цветы </a> </li>
+                        <li> <a href="/catalog-bouquets"> Букеты </a> </li>
+                        <li> <a> Подарки </a> </li>
+                        <li> <a> Конструктор </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="about.html"> О нас </a> </li>
+                <li> <a> Доставка </a> </li>
+                <li> <a href="contact.html"> Контакты </a> </li>
+                <li> <a href="/account"> Личный кабинет </a> </li>
+                <li> <a href="/cart"> Корзина </a> </li>
+                <li> <img onclick="changeThemeDark()" id="theme_icon_dark" src="/src/main/webapp/images/icon-theme-d.png"> </li>
+                <li> <img onclick="changeThemeLight()" id="theme_icon_light" src="/src/main/webapp/images/icon-theme-l.png"> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="h1_catalog"> Каталог букетов </h1>
+
+    <div class="catalog_section">
+        <button onclick="openCreatingMenu()" id="create_button"> Добавить товар </button>
+
+        <div id="creating_menu">
+            <h3> Создать новый товар: </h3>
+            <form action="catalog-bouquets" method="POST">
+                <label for="product_name"> Название товара: </label>
+                <input id="product_name" type="text" name="product_name"/>
+
+                <br>
+
+                <label> Категория: </label>
+                <label>
+                    <input type="checkbox" name="categories" value="1">
+                    Электроника
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="2">
+                    Одежда
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="3">
+                    Книги
+                </label>
+
+                <br>
+
+                <label for="product_price"> Стоимость товара: </label>
+                <input id="product_price" type="number" name="product_price"/>
+
+                <br>
+
+                <label for="product_description"> Описание товара: </label>
+                <br>
+                <textarea id="product_description" name="product_description" rows="5"></textarea>
+
+                <br>
+
+                <label for="photo_name"> Имя файла фотографии с расширением: </label>
+                <input id="photo_name" type="text" name="photo_name"/>
+            </form>
+
+            <input id="button" type="submit" value="Сохранить товар" />
+        </div>
+
+        <div class="products_container">
+            <a href="/bouquet-1">
+                <div class="product_card">
+                    <img class="product_image" src="/src/main/webapp/images/bouquet_1.jpg">
+                    <p> Тёмный роман </p>
+                    <p> 3400 руб </p>
+                    <form action="/add-cart" method="post">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="name" value="Тёмный роман">
+                        <input type="hidden" name="price" value="3400.0">
+                        <input type="hidden" name="returnUrl" value="/catalog-bouquets">
+                        <button type="submit" class="buy_button"> В корзину </button>
+                    </form>
+                </div>
+            </a>
+
+            <a href="/bouquet-1">
+                <div class="product_card" >
+                    <img class="product_image" src="/src/main/webapp/images/bouquet_1.jpg">
+                    <p> Тёмный роман </p>
+                    <p> 3400 руб </p>
+                    <form action="/add-cart" method="post">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="name" value="Тёмный роман">
+                        <input type="hidden" name="price" value="3400.0">
+                        <input type="hidden" name="returnUrl" value="/catalog-bouquets">
+                        <button type="submit" class="buy_button"> В корзину </button>
+                    </form>
+                </div>
+            </a>
+
+            <a href="/bouquet-1">
+                <div class="product_card" >
+                    <img class="product_image" src="/src/main/webapp/images/bouquet_1.jpg">
+                    <p> Тёмный роман </p>
+                    <p> 3400 руб </p>
+                    <form action="/add-cart" method="post">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="name" value="Тёмный роман">
+                        <input type="hidden" name="price" value="3400.0">
+                        <input type="hidden" name="returnUrl" value="/catalog-bouquets">
+                        <button type="submit" class="buy_button"> В корзину </button>
+                    </form>
+                </div>
+            </a>
+
+            <a href="/bouquet-1">
+                <div class="product_card" >
+                    <img class="product_image" src="/src/main/webapp/images/bouquet_1.jpg">
+                    <p> Тёмный роман </p>
+                    <p> 3400 руб </p>
+                    <form action="/add-cart" method="post">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="name" value="Тёмный роман">
+                        <input type="hidden" name="price" value="3400.0">
+                        <input type="hidden" name="returnUrl" value="/catalog-bouquets">
+                        <button type="submit" class="buy_button"> В корзину </button>
+                    </form>
+                </div>
+            </a>
+
+            <a href="/bouquet-1">
+                <div class="product_card" >
+                    <img class="product_image" src="/src/main/webapp/images/bouquet_1.jpg">
+                    <p> Тёмный роман </p>
+                    <p> 3400 руб </p>
+                    <form action="/add-cart" method="post">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="name" value="Тёмный роман">
+                        <input type="hidden" name="price" value="3400.0">
+                        <input type="hidden" name="returnUrl" value="/catalog-bouquets">
+                        <button type="submit" class="buy_button"> В корзину </button>
+                    </form>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="/src/main/webapp/js/script.js"></script>
+    <script src="/src/main/webapp/js/catalog-button.js"></script>
+</body>
+</html>
