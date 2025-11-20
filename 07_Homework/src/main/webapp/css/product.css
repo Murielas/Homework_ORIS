@@ -1,0 +1,26 @@
+.Bouquet_week_photo {
+    height: 600px;
+    border: solid 7px #000000;
+}
+
+.Bouquet_photos {
+    display: flex;
+}
+
+.Bouquet_photos a {
+    padding: 10px 40px 40px 130px;
+}
+
+#buy_button {
+    text-align: center;
+    padding: 10px 30px;
+    width: 160px;
+    border: solid 2px #000000;
+    border-radius: 5px;
+    background-color: #FFE87C;
+    cursor: pointer;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
